@@ -1,6 +1,11 @@
 <app-header [scope]="scope"></app-header>
 <mat-sidenav-container class="example-container">
-  <mat-sidenav mode="side" [opened]="isShowing">Sidenav content</mat-sidenav>
+  <mat-sidenav mode="side" [opened]="isShowing">
+    <div id='side-nav-container'>
+      <button mat-button routerLink="/">Home</button>
+      <button mat-button routerLink="/shop">Shop</button>
+    </div>
+  </mat-sidenav>
   <mat-sidenav-content>
     <router-outlet></router-outlet>
   </mat-sidenav-content>
