@@ -17,7 +17,6 @@ export class DropzoneDirective implements OnDestroy {
   private ngUnsubscribe: Subject<any> = new Subject();
 
   // =============================== Properties =================================
-  // will potentially be additional types here FileList | code | ...
   // TODO figure out if we want to emit hovered 
   @Output() public dropped = new EventEmitter<FileList>();
   @Output() public hovered = new EventEmitter<boolean>();
